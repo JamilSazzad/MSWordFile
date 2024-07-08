@@ -1,0 +1,58 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Welcome to Overleaf --- just edit your LaTeX on the left,
+% and we'll compile it for you on the right. If you open the
+% 'Share' menu, you can invite other users to edit at the same
+% time. See www.overleaf.com/learn for more info. Enjoy!
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{article}
+% Use a small page size to avoid 
+% needing lots of text to create 
+% several pages
+\usepackage[includefoot,
+paperheight=21cm,
+paperwidth=14.8cm,
+textwidth=12cm,
+textheight=16cm]{geometry}
+\usepackage{blindtext}
+\begin{document}
+% Insert a table of contents
+\tableofcontents
+\newpage
+\section{Uppercase Roman}
+\pagenumbering{Roman}% Capital 'R': uppercase Roman numerals
+\blindtext[1]
+\newpage
+\section{Lowercase Roman} % lowercase Roman numerals
+\pagenumbering{roman}
+\blindtext[1]
+\newpage
+\section{Arabic numbers}
+\pagenumbering{arabic} % Arabic/Indic page numbers
+\blindtext[1]
+\newpage
+\section{Lowercase alphabetic}
+\pagenumbering{alph} % Lowercase alphabetic page "numbers"
+\blindtext[1]
+\newpage
+\section{Uppercase alphabetic}
+\pagenumbering{Alph} % Uppercase alphabetic page "numbers"
+\blindtext[5]
+
+\section{Lowercase Roman} % lowercase Roman numerals
+\pagenumbering{roman}
+\blindtext[1]
+\newpage
+\section{Arabic numbers}
+\pagenumbering{arabic} % Arabic/Indic page numbers
+\blindtext[1]
+\newpage
+\section{Lowercase alphabetic}
+\pagenumbering{Alph} % Lowercase alphabetic page "numbers"
+\blindtext[10]
+\newpage
+\section{Uppercase alphabetic}
+\pagenumbering{Alph} % Uppercase alphabetic page "numbers"
+\blindtext[3]
+\end{document}
